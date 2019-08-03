@@ -9,9 +9,9 @@ class Book(models.Model):
     class Meta:
         db_table = 'book'
     
-    id = models.UUIDField(primary_key=True, default=uuid.uuid64, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(_('タイトル'), max_length=20)
-    price = models.DecimalField(_('価格'), null=True, blank=True)
+    price = models.IntegerField(_('価格'), null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
