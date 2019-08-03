@@ -4,13 +4,23 @@
 
 Vue.jsはCDN版を使用する。
 SPAは、Cookie認証によるSPAとする。
+
+```javascript
+cd ~/PycharmProjects/
+git clone https://github.com/Washington-Ksea/book-register-Vue-DRF.git
+
+python -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+
 djangoに関しては、以下のバージョンを使用する。
 
 ```javascript
 Django==2.2
 djangorestframework==3.9.2
-pytz==2019.2
-sqlparse==0.3.0
 ```
 
 ## 参考
